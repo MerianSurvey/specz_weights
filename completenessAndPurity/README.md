@@ -23,3 +23,10 @@ Each panel of the figure represents a different color band, _g,r,i,z,y_ from lef
 ![model output](https://github.com/MerianSurvey/specz_weights/blob/main/completenessAndPurity/figures/purityLR.jpg)
 
 As can be seen from the figure, the model captures the purity of the Merian cut fairly well. It is important to note that completeness & purity selections in the data were made randomly, whereas those depicted in the first figure were made as a function of mass. 
+
+*** 
+
+## Notebooks in This Directory 
+
+* `compPur_LRdata.ipynb` - This notebook creates the data to train and test linear regression models. The basic process is to read in the COSMOS catalog, then make the artificial merian completeness and purity cuts repeatedly. 
+* `PurityLR.ipynb` - Runs linear regression on the data created using the above notebook. 
